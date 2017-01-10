@@ -6,36 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <!-- bootstrap 4.0.0 -->
+    <!-- <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
     <script src="./dist/js/jquery.min.js"></script>
-    <script src="./dist/js/bootstrap.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="./dist/js/bootstrap.min.js"></script> -->
+
+     <!-- bootstrap 3.3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
+
+  <div class="container">
+    <h2>Contextual Classes</h2>
+    <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Default</td>
+          <td>Defaultson</td>
+          <td>def@somemail.com</td>
+        </tr>
+        <tr class="success">
+          <td>Success</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr class="danger">
+          <td>Danger</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr class="info">
+          <td>Info</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+        <tr class="warning">
+          <td>Warning</td>
+          <td>Refs</td>
+          <td>bo@example.com</td>
+        </tr>
+        <tr class="active">
+          <td>Active</td>
+          <td>Activeson</td>
+          <td>act@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
     <div class="container">
-      <div class="text-danger">尝试一下各种boot strap各种class</div>
+      <h2>试试看表格覆盖效果</h2>
+      <table class="table table-bordered">
+        <!-- thead>tr>th{header$$$}*3 -->
+        <thead>
+            <tr class=bg-warning>
+                <th>header001</th>
+                <th>header002</th>
+                <th>header003</th>
+            </tr>
+        </thead>
+        <!-- tbody>(tr>td{col$$$}*3)*6 -->
+        <tbody>
+          <tr class="success">
+            <td>col001</td>
+            <td>col002</td>
+            <td>col003</td>
+          </tr>
+          <tr class="info">
+            <td>col001</td>
+            <td>col002</td>
+            <td>col003</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <!-- thead>tr>th{header$$$}*3 -->
+        <thead>
+            <tr class=bg-warning>
+                <th>header001</th>
+                <th>header002</th>
+                <th>header003</th>
+            </tr>
+        </thead>
+        <!-- tbody>(tr>td{col$$$}*3)*6 -->
+        <tbody>
+          <tr>
+            <td>col001</td>
+            <td>col002</td>
+            <td>col003</td>
+          </tr>
+          <tr>
+            <td>col001</td>
+            <td>col002</td>
+            <td>col003</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <hr>
+    <div class="container">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>header001</th>
+                    <th>header002</th>
+                    <th>header003</th>
+                </tr>
+            </thead>
+            <!-- tbody>(tr>td{col$$$}*3)*2 -->
+            <tbody>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+                <tr>
+                    <td>col001</td>
+                    <td>col002</td>
+                    <td>col003</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <div class="text-danger">尝试一下各种boot strap各种class</div>
+        <div class="lead">lead</div>
+        <div class="small">small</div>
+        <div class="text-uppercase">hello world</div>
+        <div class="text-right">right world!</div>
+        <div class="text-center">center world</div>
     </div>
     <hr>
     <div class="container">
-      <!-- .bg-primary{hello primary}+.bg-success{success}+.bg-info{info}+.bg-warning{warning}+.bg-danger{danger} -->
-      <div class="bg-primary">hello primary</div>
-      <div class="bg-success">success</div>
-      <div class="bg-info">info</div>
-      <div class="bg-warning">warning</div>
-      <div class="bg-danger">danger</div>
+        <!-- .bg-primary{hello primary}+.bg-success{success}+.bg-info{info}+.bg-warning{warning}+.bg-danger{danger} -->
+        <div class="bg-primary">hello primary</div>
+        <div class="bg-success">success</div>
+        <div class="bg-info">info</div>
+        <div class="bg-warning">warning</div>
+        <div class="bg-danger">danger</div>
     </div>
     <hr>
     <div class="container">
-      <!-- .text-primary{hello primar}+.text-success{hello success} -->
-      <div class="text-primary">hello primar</div>
-      <div class="text-success">hello success</div>
-      <!-- .text-info{hello info}+.text-warning{hello warning} -->
-      <div class="text-info">hello info</div>
-      <div class="text-warning">hello warning</div>
+        <!-- .text-primary{hello primar}+.text-success{hello success} -->
+        <div class="text-primary">hello primar</div>
+        <div class="text-success">hello success</div>
+        <!-- .text-info{hello info}+.text-warning{hello warning} -->
+        <div class="text-info">hello info</div>
+        <div class="text-warning">hello warning</div>
 
     </div>
     <hr>
